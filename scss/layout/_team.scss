@@ -1,0 +1,70 @@
+
+.section--grey-background {
+    background-color: $button-portfolio;
+  }
+  
+  .team-list {
+    @include tab{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    };
+    @include desk{
+    flex-wrap: nowrap;
+    };
+  }
+  
+  .team-list__item{
+    background-color: $background-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    @include tel{
+      &:not(:last-child){
+        margin-bottom: 30px;
+      };
+    };
+
+    @media screen and (min-width: 768px) and (max-width:1199px){
+      max-width: 354px;
+      &:nth-child(2n+1){
+        margin-right: 30px;
+      };
+      &:nth-child(-n+2){
+        margin-bottom: 30px;
+      };
+    };
+
+    @include desk{
+    &:not(:last-child) {
+    margin-right: 30px;
+    };
+  }
+}
+
+ .team-list__img{
+  height: auto;
+  width: 100%;
+   @include desk{
+     max-width: 270px;
+   };
+ }
+
+  .team-list__title {
+    color: $main-text-color;
+    @include font ($fw:500, $fs:16px, $lh: calc(19 / 16), $ls:0.03em );
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .team-list__text {
+    color: $additional-text-color;
+    @include font ($fw:400, $fs:16px, $lh: calc(19 / 16), $ls:0.03em );
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  
+  .team-list__wrap {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  

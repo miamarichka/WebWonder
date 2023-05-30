@@ -1,0 +1,44 @@
+@mixin list-wrap ($dis:flex, $ai:center, $jc:center){
+    display: $dis;
+    align-items: $ai;
+    justify-content: $jc;
+}
+
+@mixin font ($fw:500, $fs:14px, $lh: calc(16 / 14), $ls:0.02em ){
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+
+@mixin transition ($property:color) {
+    transition-property: color;
+    transition-duration: 250ms ;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
+}
+
+@mixin tel{
+    @media screen and (max-width:767px){
+        @content;
+    }
+}
+
+@mixin tab{
+    @media screen and (min-width:768px){
+        @content;
+    }
+}
+
+@mixin desk{
+    @media screen and (min-width:1200px){
+        @content;
+    }
+}
+
+@mixin retina {
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx){
+      @content;
+  };
+}

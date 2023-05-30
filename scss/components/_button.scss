@@ -1,0 +1,28 @@
+.button{
+border: transparent;
+border-radius: 4px;
+color: $title-color;
+background-color: $button-color;
+width: 200px;
+height: 50px;
+font-weight: 700;
+font-size: 16px;
+line-height: calc(30 / 16);
+letter-spacing: 0.06em;
+padding: 0;
+
+@include list-wrap();
+
+@include transition($property:scale);
+
+&:hover,
+&:focus{
+transform: scale(1.05);
+ };
+}
+
+.subscribe-form__button{
+    @media screen and (max-width:1199px){
+margin: auto;
+ };
+}

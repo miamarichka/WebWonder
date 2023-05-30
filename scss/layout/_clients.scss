@@ -1,0 +1,93 @@
+
+.client-list{
+  @media screen and (max-width:479px){
+  display: flex;
+  flex-basis: auto;
+  };
+  display: flex;
+    @include tel{
+	    flex-wrap: wrap;
+    };
+    @include tab{
+      padding: 0;
+      flex-wrap: wrap;
+      margin: 0;
+    };
+}
+
+  
+  .client-list__item{
+    @media screen and (max-width:480px){
+     width: calc(100% / 2 - 30px);
+     &:not(:nth-last-child(n+2)){
+       margin-bottom: 0;
+     };
+    };
+
+ 
+   @include tel{
+   &:nth-child(2n+1){
+     margin-right: 30px;
+   };
+   &:nth-child(-n+4){
+     margin-bottom: 30px;
+   };
+  };
+
+  @media screen and (min-width: 768px) and (max-width:1199px){
+    &:nth-child(2){
+      margin-right: 30px;
+      margin-left: 30px;
+    };
+    &:nth-child(5){
+      margin-right: 30px;
+      margin-left: 30px;
+    };
+    &:nth-child(-n+3){
+      margin-bottom: 30px;
+    };
+};
+  @include desk{
+  & + .client-list__item{
+  margin-left: 30px;
+    };
+ };
+};
+  
+  
+  .client-list__link{
+    @media screen and (max-width:479px){
+     max-width: 210px;
+    };
+    @media screen and (min-width:480px){
+     width: 210px;
+    };
+
+    @include tab{
+      width: 226px;
+    };
+
+    @include list-wrap();
+    @include desk{
+    width: 170px;
+    flex-wrap: nowrap;
+    };
+    height: 92px;
+  
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: #AFB1B8;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.215, 0.610, 0.355, 1);
+
+    &:focus,
+    &:hover{
+        color: $button-color;
+        border-color: $button-color;
+  };
+}
+
+  .client-list__icon{
+    fill: currentColor;
+  }

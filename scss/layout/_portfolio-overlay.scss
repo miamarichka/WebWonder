@@ -1,0 +1,37 @@
+.project-overlay__text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: $title-color;
+    font-size: 18px;
+    line-height: calc(28 / 18);
+    letter-spacing: 0.03em;
+    background-color: rgba(33, 150, 243, 0.9);
+    width: 100%;
+    max-width: 370px;
+    padding: 63px 24px;
+    transform: translateY(100%);
+    opacity: 0;
+    @include transition(transform opacity);
+
+    .projects-list__link:hover &,
+    .projects-list__link:focus &{
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
+  
+  .project-overlay {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .projects-list__link{
+    display: block;
+    position: relative;
+    @include transition(box-shadow);
+
+  }
+
+
+  

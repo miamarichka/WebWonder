@@ -1,0 +1,20 @@
+.container {
+ margin: auto;
+ width: 100%;
+ max-width: 480px;
+ padding-left: 15px;
+ padding-right: 15px;
+
+@include tab{
+ max-width:768px;
+ width: 100%;
+};
+
+ @include desk{
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+ };
+}

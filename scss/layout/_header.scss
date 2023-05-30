@@ -1,0 +1,27 @@
+.container__header{
+    @include tel{
+        position: relative;
+    };
+    
+    @include tab{
+    @include list-wrap($jc:space-between);
+};
+    
+}
+
+.header__mobile{
+    @include tel{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    };
+    @include tab{
+        margin-right: 93px;
+    };
+}
+
+.header{
+    background-color: $background-color;
+    border-bottom: 1px solid #ececec;
+  }

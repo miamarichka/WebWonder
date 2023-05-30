@@ -1,0 +1,73 @@
+.subscribe-form{
+@media screen and (min-width:768px) and (max-width:1199px){
+  margin: 0 152px 0 166px;
+};
+
+  @include desk{
+    @include list-wrap($ai:flex-end);
+     };
+    }
+    
+    .subscribe-form__input-email{
+    outline: none;
+    
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    
+
+    @media screen and (min-width:768px) and (max-width:1199px){
+    margin-bottom: 20px;
+  };
+    @include tab{
+    width: 358px;
+    height: 50px;
+    };
+
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    
+    margin-top: 20px;
+    padding: 16px 15px;
+    @include transition (border-color);
+
+    &:focus{
+        border-color: $button-color;
+    }
+
+    &::placeholder{
+        font-size: 16px;
+        line-height: calc(20 / 16);
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);}
+}
+    
+    .subscribe-form__wrap{
+      @include tel{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        padding: inherit;
+      };
+
+      @include tab{
+        max-width: 450px;
+      };
+
+      @include desk{
+      margin-right: 12px;
+      max-width: 358px;};
+    }
+    
+    .subscribe-form__icon{
+      
+      @include tab{
+        margin-left: 10px;};
+      }
+      
+
+      

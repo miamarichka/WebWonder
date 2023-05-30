@@ -1,0 +1,34 @@
+.logo {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  font-family: $secondary-font;
+  color: $button-color;
+  font-weight: 700;
+
+  @include tab{
+    display: block;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+  };
+    
+    
+  }
+
+  .logo--black {
+    color: $main-text-color;
+  }
+
+  .header__logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+
+  .logo--white {
+    color: $title-color;
+  }
+
+  .footer__logo {
+    display: block;
+    margin-bottom: 20px;
+  }
