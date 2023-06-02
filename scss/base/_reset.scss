@@ -1,7 +1,12 @@
 body {
   font-family: Roboto, sans-serif;
+  scroll-behavior: smooth;
 }
-/*reset and common*/
+
+body.is-hidden{
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,

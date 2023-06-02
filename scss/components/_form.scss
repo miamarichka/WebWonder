@@ -52,12 +52,14 @@
   padding-left: 42px;
   @include transition ($property:border-color);
 
-  &:focus{
-      border-color: $button-color;
-  }
-  &:focus + .form-list__icon{
-    fill: $button-color;
-  }
+&:focus, &:hover {
+  border-color: $button-color;
+}
+
+&:hover + .form-list__icon,
+&:focus + .form-list__icon {
+  fill: $button-color;
+}
 
  }
   
@@ -82,7 +84,7 @@
    letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 
-  &:focus{
+  &:focus, &:hover{
       border-color: $button-color;
   }
 }
@@ -116,6 +118,9 @@
     border-radius: 20%;
     border: 2px solid black;
     margin-right: 8px;
+    &:hover, &:focus{
+      border: 2px solid $button-color;
+    }
     @include tel{
       margin-right: 2px;
     }
