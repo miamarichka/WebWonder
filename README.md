@@ -1,6 +1,6 @@
-# WebStudio Landing Site
+# WebWonder Landing Site
 
-Welcome to the WebStudio Landing Site project! This web application serves as a landing page for a fictional web studio. It provides information about the services offered, showcases the team members, displays a portfolio of past projects, and allows users to get in touch through a contact form.
+Welcome to the WebWonder Landing Site project! This web application serves as a landing page for a fictional web studio. It provides information about the services offered, showcases the team members, displays a portfolio of past projects, and allows users to get in touch through a contact form.
 
 # Features
 1. Responsive Layout: The web app is designed to be accessible and visually appealing on mobile phones, laptops, and desktops.
